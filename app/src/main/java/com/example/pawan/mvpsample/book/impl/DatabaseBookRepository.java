@@ -33,7 +33,7 @@ public class DatabaseBookRepository implements BookRepository {
           return   databaseHelper.getBookDao().queryBuilder().orderBy("title", true).query();
         } catch (Exception e) {
             e.printStackTrace();
-            throw new RuntimeException("Something went wrong.");
+            throw new RuntimeException("Something went wrong !");
         }
 
     }
