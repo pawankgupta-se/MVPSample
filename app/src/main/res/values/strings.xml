@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MVPSample</string>
+    <string name="add_book">Add Book</string>
+    <string name="books_will_be_listed_here">Books will be listed here !</string>
 </resources>

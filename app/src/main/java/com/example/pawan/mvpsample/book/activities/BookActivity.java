@@ -1,15 +1,15 @@
 package com.example.pawan.mvpsample.book.activities;
 
 import android.content.Intent;
-import android.support.v4.app.FragmentManager;
+import androidx.fragment.app.FragmentManager;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.example.pawan.mvpsample.BaseActivity;
 import com.example.pawan.mvpsample.book.fragments.BookListFragment;
+import com.example.pawan.mvpsample.book.fragments.GraphFragment;
 import com.example.pawan.mvpsample.book.presenters.BookListFragmentPresenter;
 import com.example.pawan.mvpsample.book.fragments.NoBookFragment;
 import com.example.pawan.mvpsample.R;
@@ -17,7 +17,6 @@ import com.example.pawan.mvpsample.book.models.Book;
 
 public class BookActivity extends BaseActivity implements BookListFragment.Communicator {
     private static final String TAG = Book.class.getSimpleName();
-    private BookListFragmentPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +31,8 @@ public class BookActivity extends BaseActivity implements BookListFragment.Commu
             case R.id.add_book:
                 startAddBookActivity();
                 return true;
-            case R.id.help:
+            case R.id.graph:
+                loadGraphFragment();
                 break;
             default:
                 break;
@@ -67,6 +67,12 @@ public class BookActivity extends BaseActivity implements BookListFragment.Commu
         fm.beginTransaction().replace(R.id.container, fragment).commit();
     }
 
+    private void loadGraphFragment() {
+        GraphFragment fragment = GraphFragment.getInstance(new Bundle());
+        FragmentManager fm = getSupportFragmentManager();
+        fm.beginTransaction().replace(R.id.container, fragment).commit();
+    }
+
     @Override
     public void respond() {
         loadNoBookFragment();
@@ -75,6 +81,5 @@ public class BookActivity extends BaseActivity implements BookListFragment.Commu
     @Override
     protected void onStop() {
         super.onStop();
-        presenter.unSubscribe();
     }
 }

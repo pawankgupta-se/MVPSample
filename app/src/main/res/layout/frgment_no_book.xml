@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:textSize="18sp"
-        android:text="Books will be listed here !" />
+        android:text="@string/books_will_be_listed_here" />
 
     <Button
         android:id="@+id/add_book_btn"
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/no_book_msg"
         android:layout_centerHorizontal="true"
-        android:text="Add Book" />
-
+        android:layout_marginTop="0dp"
+        android:text="@string/add_book" />
 
 </RelativeLayout>

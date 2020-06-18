@@ -1,9 +1,9 @@
 package com.example.pawan.mvpsample.book.activities;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentManager;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentManager;
 
 import com.example.pawan.mvpsample.book.fragments.AddBookFragment;
 import com.example.pawan.mvpsample.BaseActivity;

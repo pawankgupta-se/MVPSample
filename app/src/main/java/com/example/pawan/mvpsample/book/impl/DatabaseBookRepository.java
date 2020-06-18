@@ -5,7 +5,7 @@ import android.content.Context;
 import com.example.pawan.mvpsample.helpers.DatabaseHelper;
 import com.example.pawan.mvpsample.book.models.Book;
 import com.example.pawan.mvpsample.repositories.BookRepository;
-import com.j256.ormlite.android.apptools.OpenHelperManager;git branch --set-upstream-to origin/master master
+import com.j256.ormlite.android.apptools.OpenHelperManager;
 
 import java.sql.SQLException;
 import java.util.Collections;
