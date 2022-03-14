@@ -1,11 +1,5 @@
 version: 2
 updates:
-  - package-ecosystem: github-actions
-    directory: "/"
-    schedule:
-      interval: daily
-      open-pull-requests-limit: 99
-      
   # Enable version updates for gradle
   - package-ecosystem: "gradle"
     # Look for `package.json` and `lock` files in the `root` directory
