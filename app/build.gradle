@@ -40,7 +40,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
-    implementation 'com.j256.ormlite:ormlite-android:4.48'
+    implementation 'com.j256.ormlite:ormlite-android:6.1'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     testCompile "org.mockito:mockito-core:2.+"
 
