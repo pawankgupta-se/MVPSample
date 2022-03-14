@@ -4,7 +4,8 @@ updates:
   - package-ecosystem: "gradle"
     # Look for `package.json` and `lock` files in the `root` directory
     directory: "/"
-    # Check the npm registry for updates every day (weekdays)
+    # Check the gradle registry for updates every day (weekdays)
     schedule:
       interval: "daily"
+    target-branch: "develop"
 
