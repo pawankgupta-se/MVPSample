@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # Enable version updates for gradle
+  - package-ecosystem: "gradle"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    # Check the gradle registry for updates every day (weekdays)
+    schedule:
+      interval: "daily"
+    target-branch: "develop"
+    open-pull-requests-limit: 99
