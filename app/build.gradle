@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
-apply from: "$rootDir/build_scripts/dependencies.gradle"
+
+buildscript{
+    apply from: "$rootDir/build_scripts/dependencies.gradle"
+}
+
 
 android {
     compileSdkVersion 28
