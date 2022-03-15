@@ -1,10 +1,5 @@
 apply plugin: 'com.android.application'
 
-buildscript{
-    apply from: "$rootDir/build_scripts/dependencies.gradle"
-}
-
-
 android {
     compileSdkVersion 30
     defaultConfig {
