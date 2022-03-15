@@ -8,7 +8,7 @@ ext {
     recyclerView = 'androidx.recyclerview:recyclerview:1.0.0'
     mockito = "org.mockito:mockito-core:2.+"
 
-    rxAndroid = 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    rxAndroid = 'io.reactivex.rxjava2:rxandroid:2.1.1'
     rxJava  = 'io.reactivex.rxjava2:rxjava:2.1.8'
     donutChart = 'com.github.wittgroup-inc:donut_chart:1.0'
 }
