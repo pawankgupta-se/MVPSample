@@ -1,14 +1,18 @@
 ext {
-    appCompat = 'androidx.appcompat:appcompat:1.0.0'
-    constraintLayout = 'androidx.constraintlayout:constraintlayout:1.1.3'
-    junit = 'junit:junit:4.12'
-    junitAndroid = 'androidx.test.ext:junit:1.1.1'
-    espressoCore = 'androidx.test.espresso:espresso-core:3.1.0'
-    ormlite = 'com.j256.ormlite:ormlite-android:4.48'
-    recyclerView = 'androidx.recyclerview:recyclerview:1.0.0'
-    mockito = "org.mockito:mockito-core:2.+"
+    appCompat = 'androidx.appcompat:appcompat:1.4.1'
+    constraintLayout = 'androidx.constraintlayout:constraintlayout:2.1.3'
+   
+    ormlite = 'com.j256.ormlite:ormlite-android:6.1'
+    recyclerView = 'androidx.recyclerview:recyclerview:1.2.1'
+  
+    rxAndroid = 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    rxJava  = 'io.reactivex.rxjava2:rxjava:2.2.21'
 
-    rxAndroid = 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    rxJava  = 'io.reactivex.rxjava2:rxjava:2.1.8'
     donutChart = 'com.github.wittgroup-inc:donut_chart:1.0'
+    
+    mockito = "org.mockito:mockito-core:4.+"
+    junit = 'junit:junit:4.13.2'
+
+    junitAndroid = 'androidx.test.ext:junit:1.1.3'
+    espressoCore = 'androidx.test.espresso:espresso-core:3.4.0'
 }
