@@ -10,7 +10,7 @@ ext {
 
     donutChart = 'com.github.wittgroup-inc:donut_chart:1.0'
     
-    mockito = "org.mockito:mockito-core:4.+"
+    mockito = "org.mockito:mockito-core:5.+"
     junit = 'junit:junit:4.13.2'
 
     junitAndroid = 'androidx.test.ext:junit:1.1.3'
